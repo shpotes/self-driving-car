@@ -25,7 +25,7 @@ so, it would be a great upper bound for self driving car model.
    run `evaluate_image.py` file, in order to measure the vanilla tensorflow
    performace.
 
-2. On lite folder run the `model.sh` script and then run the `test.py` file,
+2. On `lite` folder run the `model.sh` script and then run the `test.py` file,
    in order to measure the tensorflo lite performance.
 
 
