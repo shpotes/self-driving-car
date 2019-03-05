@@ -1,6 +1,6 @@
 rm -rf model
 mkdir model
 cd model
-wget http://download.tensorflow.org/models/inception_v4_299_quant_20181026.tgz
-tar xvf inception_v4_299_quant_20181026.tgz
-rm inception_v4_299_quant_20181026.tgz
+wget https://storage.googleapis.com/download.tensorflow.org/models/tflite/model_zoo/upload_20180427/inception_resnet_v2_2018_04_27.tgz
+tar xvf inception_resnet_v2_2018_04_27.tgz
+rm inception_resnet_v2_2018_04_27.tgz
