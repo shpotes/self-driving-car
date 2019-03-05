@@ -1,0 +1,32 @@
+Run 000:	1.0372 seconds
+Run 001:	1.1160 seconds
+Run 002:	1.1159 seconds
+Run 003:	1.0618 seconds
+Run 004:	1.1161 seconds
+Run 005:	1.0302 seconds
+Run 006:	1.2749 seconds
+Run 007:	1.2684 seconds
+Run 008:	1.0318 seconds
+Run 009:	1.2701 seconds
+Run 010:	1.3307 seconds
+Run 011:	1.0089 seconds
+Run 012:	1.1281 seconds
+Run 013:	1.0030 seconds
+Run 014:	1.3325 seconds
+Run 015:	1.3756 seconds
+Run 016:	1.2716 seconds
+Run 017:	1.2788 seconds
+Run 018:	1.0127 seconds
+Run 019:	1.1709 seconds
+Run 020:	1.0632 seconds
+Run 021:	1.0021 seconds
+Run 022:	1.0437 seconds
+Run 023:	1.2845 seconds
+Run 024:	1.2725 seconds
+---
+Best run: 1.0021
+Worst run: 1.3756
+Average run: 1.5604
+Build graph time: 2.8158
+Number of warmup runs: 10
+Number of test runs: 25
