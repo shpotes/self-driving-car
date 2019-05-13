@@ -67,13 +67,13 @@ if __name__ == '__main__':
 
     actions = ['stop', 'forward_left', 'forward', 'forward_right', 'backward_left', 'backward', 'backward_right', 'fwstraight']
 
-    #if(not connection_ok(base_url)):
-    #    raise Exception('Connection failed')
+    if(not connection_ok(base_url)):
+        raise Exception('Connection failed')
 
     #cap = cv2.VideoCapture(base_url + '?action=stream')
-    #cap = cv2.VideoCapture('http://10.42.0.235:8080/?action=stream')
+    cap = cv2.VideoCapture('http://10.42.0.235:8080/?action=stream')
     #cap = cv2.VideoCapture(0)
-    cap = cv2.VideoCapture('linesData2.mp4')
+    #cap = cv2.VideoCapture('linesData2.mp4')
     ret, frame = cap.read()
 
     if(not ret):
@@ -97,11 +97,12 @@ if __name__ == '__main__':
 
         for i in range(waitFrames):
             _,_ = cap.read()
+
         i_time = time.time()
         prediction = np.argmax(model.predict(image))
         print('Time predicting action: {}'.format(time.time()-i_time))
         print("prediction = {} ... action = {}".format(prediction, actions[prediction+1]))
-        '''if prediction == 0:
+        if prediction == 0:
             print("forward_left")
             run_action(base_url, actions[1])
             time.sleep(wait)
@@ -134,7 +135,7 @@ if __name__ == '__main__':
             run_action(base_url, actions[6])
             time.sleep(wait)
             run_action(base_url, actions[0])
-            run_action(base_url, actions[-1])'''
+            run_action(base_url, actions[-1])
         time.sleep(1)
 
         ret, frame = cap.read()
