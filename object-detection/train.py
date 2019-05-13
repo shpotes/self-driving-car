@@ -14,7 +14,7 @@ argparser.add_argument(
     '--conf',
     help='path to config file')
 
-with open(config_path) as config_buffer:    
+with open(argparser.parse_args().conf) as config_buffer:    
     config = json.loads(config_buffer.read())
     
 train_imgs = parse_annotation(config['train']['train_annot_folder'], 
@@ -30,6 +30,7 @@ random.shuffle(train_imgs)
 
 N = len(train_imgs)
 train_size = int(N * config['train']['validation_split'])
+print(train_size)
 valid_imgs = train_imgs[train_size:]
 train_imgs = train_imgs[:train_size]
 
