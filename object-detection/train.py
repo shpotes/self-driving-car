@@ -5,6 +5,7 @@ from preprocessing import parse_annotation
 from frontend import YOLO
 import json
 import argparse
+import pickle
 
 argparser = argparse.ArgumentParser(
     description='Train and validate YOLO_v2')
@@ -17,8 +18,10 @@ argparser.add_argument(
 with open(argparser.parse_args().conf) as config_buffer:    
     config = json.loads(config_buffer.read())
     
-train_imgs = parse_annotation(config['train']['train_annot_folder'], 
-                              config['train']['train_image_folder'])
+#train_imgs = parse_annotation(config['train']['train_annot_folder'], 
+#                              config['train']['train_image_folder'])
+
+train_imgs = pickle.load(open('dataset/annotation.pkl', 'rb'))
 
 yolo = YOLO(backend = config['model']['backend'],
             input_size = config['model']['input_size'], 

@@ -296,12 +296,14 @@ class YOLO(object):
                            patience=3, 
                            mode='min', 
                            verbose=1)
+        
         checkpoint = ModelCheckpoint(saved_weights_name, 
                                      monitor='val_loss', 
                                      verbose=1, 
                                      save_best_only=True, 
                                      mode='min', 
                                      period=1)
+
         tensorboard = TensorBoard(log_dir=os.path.expanduser('~/logs/'), 
                                   histogram_freq=0, 
                                   #write_batch_performance=True,
