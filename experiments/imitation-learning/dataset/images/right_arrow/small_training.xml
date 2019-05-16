@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<?xml-stylesheet type='text/xsl' href='image_metadata_stylesheet.xsl'?>
+<dataset>
+<name>Training examples</name>
+<images>
+  <image file='2019-04-13_09:07:520.jpg'>
+    <box top='157' left='481' width='104' height='107'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:08:101.jpg'>
+    <box top='231' left='352' width='33' height='34'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:08:342.jpg'>
+    <box top='126' left='157' width='34' height='38'>
+    </box>
+    <box top='156' left='378' width='31' height='31'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:08:493.jpg'>
+    <box top='171' left='497' width='56' height='59'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:09:054.jpg'>
+    <box top='165' left='427' width='57' height='56'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:09:265.jpg'>
+    <box top='111' left='179' width='125' height='127'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:09:346.jpg'>
+    <box top='161' left='413' width='76' height='84'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:09:477.jpg'>
+    <box top='202' left='612' width='29' height='31'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:09:578.jpg'>
+    <box top='161' left='440' width='52' height='55'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:10:049.jpg'>
+    <box top='249' left='459' width='46' height='45'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:10:1210.jpg'>
+    <box top='165' left='432' width='53' height='51'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:10:4111.jpg'>
+    <box top='169' left='458' width='24' height='21'>
+    </box>
+    <box top='145' left='314' width='23' height='27'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:11:1212.jpg'>
+    <box top='167' left='473' width='48' height='47'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:11:2413.jpg'>
+    <box top='168' left='480' width='45' height='48'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:11:4614.jpg'>
+    <box top='115' left='111' width='80' height='81'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:12:0315.jpg'>
+    <box top='127' left='326' width='114' height='128'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:12:1416.jpg'>
+    <box top='207' left='347' width='96' height='103'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:12:2517.jpg'>
+    <box top='260' left='421' width='40' height='38'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:12:4718.jpg'>
+    <box top='147' left='307' width='23' height='24'>
+    </box>
+    <box top='128' left='147' width='25' height='29'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:12:5919.jpg'>
+    <box top='202' left='134' width='46' height='48'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:13:2520.jpg'>
+    <box top='195' left='595' width='51' height='52'>
+    </box>
+    <box top='94' left='5' width='113' height='122'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:13:3121.jpg'>
+    <box top='181' left='0' width='46' height='51'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:13:3922.jpg'>
+    <box top='206' left='188' width='48' height='47'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:13:5123.jpg'>
+    <box top='282' left='619' width='31' height='32'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:14:0124.jpg'>
+    <box top='97' left='20' width='94' height='100'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:14:3025.jpg'>
+    <box top='165' left='439' width='37' height='37'>
+    </box>
+    <box top='120' left='140' width='47' height='56'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:14:4926.jpg'>
+    <box top='243' left='473' width='60' height='58'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:14:5927.jpg'>
+    <box top='157' left='518' width='86' height='97'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:15:0928.jpg'>
+    <box top='171' left='3' width='74' height='88'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:15:2129.jpg'>
+    <box top='204' left='34' width='49' height='54'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:15:2730.jpg'>
+    <box top='196' left='186' width='45' height='52'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:15:3531.jpg'>
+    <box top='114' left='209' width='45' height='47'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:15:4332.jpg'>
+    <box top='235' left='376' width='34' height='34'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:15:5833.jpg'>
+    <box top='162' left='422' width='35' height='37'>
+    </box>
+    <box top='121' left='145' width='43' height='51'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:16:2135.jpg'>
+    <box top='165' left='474' width='103' height='106'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:16:2836.jpg'>
+    <box top='260' left='462' width='51' height='51'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:16:4037.jpg'>
+    <box top='263' left='492' width='58' height='57'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:16:5438.jpg'>
+    <box top='140' left='292' width='53' height='50'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:17:0839.jpg'>
+    <box top='171' left='486' width='52' height='56'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:17:1840.jpg'>
+    <box top='182' left='539' width='39' height='41'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:17:2641.jpg'>
+    <box top='385' left='254' width='106' height='104'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:17:3542.jpg'>
+    <box top='197' left='182' width='49' height='48'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:17:4643.jpg'>
+    <box top='148' left='359' width='66' height='65'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:17:5544.jpg'>
+    <box top='107' left='220' width='101' height='97'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:18:0345.jpg'>
+    <box top='194' left='27' width='71' height='76'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:18:2546.jpg'>
+    <box top='105' left='64' width='86' height='93'>
+    </box>
+    <box top='181' left='542' width='46' height='50'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:18:4147.jpg'>
+    <box top='147' left='351' width='46' height='47'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:18:5448.jpg'>
+    <box top='204' left='345' width='100' height='106'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:19:0849.jpg'>
+    <box top='114' left='86' width='30' height='35'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:19:1550.jpg'>
+    <box top='113' left='208' width='53' height='54'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:19:2551.jpg'>
+    <box top='120' left='168' width='111' height='115'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:19:3252.jpg'>
+    <box top='209' left='161' width='41' height='41'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:19:4153.jpg'>
+    <box top='133' left='309' width='72' height='74'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:19:5354.jpg'>
+    <box top='137' left='295' width='58' height='56'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:20:1556.jpg'>
+    <box top='140' left='270' width='57' height='55'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:20:2357.jpg'>
+    <box top='268' left='518' width='36' height='37'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:20:3258.jpg'>
+    <box top='116' left='212' width='75' height='93'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:20:3959.jpg'>
+    <box top='178' left='448' width='36' height='38'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:20:4860.jpg'>
+    <box top='207' left='185' width='40' height='42'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:20:5461.jpg'>
+    <box top='101' left='36' width='88' height='90'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:21:0562.jpg'>
+    <box top='208' left='350' width='102' height='103'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:21:2364.jpg'>
+    <box top='127' left='217' width='77' height='74'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:21:3365.jpg'>
+    <box top='182' left='541' width='73' height='73'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:21:4866.jpg'>
+    <box top='205' left='273' width='110' height='102'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:22:0467.jpg'>
+    <box top='105' left='39' width='86' height='86'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:22:1268.jpg'>
+    <box top='197' left='80' width='50' height='53'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:22:2169.jpg'>
+    <box top='109' left='151' width='166' height='164'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:22:4571.jpg'>
+    <box top='269' left='562' width='39' height='40'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:22:5472.jpg'>
+    <box top='244' left='425' width='41' height='41'>
+    </box>
+  </image>
+  <image file='2019-04-13_09:23:0473.jpg'>
+    <box top='202' left='0' width='45' height='54'>
+    </box>
+  </image>
+</images>
+</dataset>
