@@ -252,6 +252,9 @@ class Vehicle(object):
         
         return loss
     
+    def load_weights(self, weight_path):
+        self.model.load_weights(weight_path)
+        
     def train(self, train_imgs,     # the list of images to train the model
                     valid_imgs,     # the list of images used to validate the model
                     nb_epochs,      # number of epoches
@@ -341,3 +344,16 @@ class Vehicle(object):
                                  validation_data  = valid_generator,
                                  validation_steps = len(valid_generator),
                                  callbacks        = [early_stop, checkpoint, tensorboard])    
+        
+    def predict(self, image):
+        image_h, image_w, _ = image.shape
+        image = cv2.resize(image, (self.input_size, self.input_size))
+        image = self.feature_extractor.normalize(image)
+
+        input_image = image[:,:,::-1]
+        input_image = np.expand_dims(input_image, 0)
+        dummy_array = np.zeros((1,1,1,1,self.max_box_per_image,4))
+
+        netout = self.model.predict([input_image, dummy_array])
+        
+        return netout
