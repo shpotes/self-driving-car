@@ -2,7 +2,7 @@ import os
 import random
 import numpy as np
 from preprocessing import parse_annotation
-from frontend import YOLO
+from frontend import Vehicle
 import json
 import argparse
 import pickle
@@ -15,17 +15,23 @@ argparser.add_argument(
     '--conf',
     help='path to config file')
 
+
+config = tf.ConfigProto(device_count{"CPU": 16})
+keras.backend.tensorflow_backend.set_session(tf.Session(config=config))
+
 with open(argparser.parse_args().conf) as config_buffer:    
     config = json.loads(config_buffer.read())
     
 #train_imgs = parse_annotation(config['train']['train_annot_folder'], 
 #                              config['train']['train_image_folder'])
 
-train_imgs = pickle.load(open('dataset/annotation.pkl', 'rb'))
+train_imgs = pickle.load(open('data_test/annotation.pkl', 'rb'))
 
-yolo = YOLO(backend = config['model']['backend'],
-            input_size = config['model']['input_size'], 
+yolo = Vehicle(backend = config['model']['backend'],
+            input_size = config['model']['input_size'],
             labels = config['model']['labels'], 
+            actions = config['model']['actions'],
+            ob_weights = config['model']['ob_weights'],
             max_box_per_image = config['model']['max_box_per_image'],
             anchors = config['model']['anchors'])
 
