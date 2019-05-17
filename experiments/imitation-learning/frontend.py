@@ -87,7 +87,7 @@ class Vehicle(object):
         added = Concatenate()([flat1, flat2])
         
         #fc1 = Dense(32, activation='relu', name='fchingona')(added)
-        fc2 = Dense(6, activation='relu', name='dir_output')(added)
+        fc2 = Dense(6, activation='softmax', name='dir_output')(added)
         
         self.model = Model([input_image, self.true_boxes], [output, fc2])
         
