@@ -1,7 +1,7 @@
 # import the necessary packages
 from keras.models import Sequential
 from keras.layers.convolutional import Conv2D, MaxPooling2D
-from keras.layers.core import Activation, Flatten, Dense
+from keras.layers.core import Activation, Flatten, Dense, Dropout
 from keras import backend as K
 from keras.preprocessing.image import ImageDataGenerator
 from keras.preprocessing.image import img_to_array
@@ -47,20 +47,22 @@ def build(width, height, depth, classes):
     model.add(Flatten())
     model.add(Dense(500))
     model.add(Activation("relu"))
+
+    model.add(Dropout(rate=0.3))
     # softmax classifier
     model.add(Dense(classes))
     model.add(Activation("softmax"))
     # return the constructed network architecture
     return model
 
-datasetNums = [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39]
-#datasetNums = [22]
+datasetNums = [23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 50, 51, 52, 53]
+#datasetNums = [23, 24, 25, 26, 27, 28, 32, 33, 34, 35, 50, 51, 52, 53]
 baseDatasets = './lineDatasets/'
 # dataset = './trainImages/' # provide the path where your training images are present
 # initialize the number of epochs to train for, initial learning rate,
 # and batch size
 EPOCHS = 15
-INIT_LR = 1e-3
+INIT_LR = 3e-4
 BS = 32
 
 # initialize the data and labels
@@ -129,7 +131,7 @@ testY = to_categorical(testY, num_classes=6)
 print("[INFO] compiling model...")
 model = build(width=56, height=56, depth=3, classes=6)
 opt = Adam(lr=INIT_LR, decay=INIT_LR / EPOCHS)
-model.compile(loss="binary_crossentropy", optimizer=opt, metrics=["accuracy"])
+model.compile(loss="categorical_crossentropy", optimizer=opt, metrics=["accuracy"])
 
 # train the network
 print("[INFO] training network...")
@@ -139,4 +141,4 @@ H = model.fit(trainX, trainY, batch_size=BS, validation_data=(testX, testY), epo
 
 # save the model to disk
 print("[INFO] serializing network...")
-model.save("anonymous_model.h5")
+model.save("anonymous_modelv1.h5")
