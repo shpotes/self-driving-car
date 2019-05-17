@@ -1,10 +1,12 @@
 {
     "model" : {
         "backend":              "SqueezeNet",
-        "input_size":           525,
+        "input_size":           256,
         "anchors":              [0.26,0.80, 0.29,0.40, 0.37,0.52, 0.46,0.63, 0.55,0.79, 0.57,1.87, 0.64,1.06, 0.99,1.52, 1.03,2.73, 1.52,4.59],
-        "max_box_per_image":    10,        
-        "labels":               ["left_arrow", "person", "right_arrow", "sem", "stop"]
+        "max_box_per_image":    10,
+        "labels":               ["left_arrow", "person", "right_arrow", "sem", "stop"],
+	"actions":              [" backward_left", " forward", " backward_right", " forward_left", " forward_right", "backward"],
+	"ob_weights":           "squeeze.h5"
     },
 
     "train": {
@@ -12,7 +14,7 @@
         "train_annot_folder":   "dataset/annotations/",
 
         "validation_split" :    0.8,
-        
+
         "batch_size":           16,
         "learning_rate":        3e-4,
         "nb_epochs":            200,
